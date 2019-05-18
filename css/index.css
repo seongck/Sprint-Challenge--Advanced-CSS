@@ -250,10 +250,16 @@ footer {
   background-color: #22283A;
   color: white;
   border-radius: 5px;
-  padding: 10px;
   font-size: 1.8rem;
   text-align: center;
+  padding: 10px;
   width: 100px;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: #22283A;
+  border: 1px solid #22283A;
+  transition: color 0.2s, background-color 0.2s;
 }
 .home .walk .walk-img {
   width: 46%;
