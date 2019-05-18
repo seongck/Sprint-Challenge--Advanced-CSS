@@ -6,14 +6,26 @@
   border-bottom: 1px solid @nav-border;
   padding: 1%;
 
+  @media @phone {
+    padding-bottom: 2%;
+  }
+
   h1 {
     margin-bottom: 20px;
+
+    @media @phone {
+      margin-top: 10px;
+    }
   }
 
   nav {
     .flex(row, space-between, center);
     width: 40%;
     max-width: 380px;
+
+    @media @phone {
+      width: 90%;
+    }
 
     a {
       color: @nav-font;
