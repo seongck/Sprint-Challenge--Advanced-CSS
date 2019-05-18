@@ -5,9 +5,13 @@
   background-color: @nav-bg;
   border-bottom: 1px solid @nav-border;
   padding: 1%;
+  position: fixed;
+  opacity: 0.9;
+  z-index: 9999;
 
   @media @phone {
     padding-bottom: 2%;
+    position: static;
   }
 
   h1 {

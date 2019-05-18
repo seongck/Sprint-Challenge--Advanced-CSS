@@ -176,10 +176,14 @@ a {
   background-color: #F6F6F6;
   border-bottom: 1px solid #F1F1F1;
   padding: 1%;
+  position: fixed;
+  opacity: 0.9;
+  z-index: 9999;
 }
 @media (max-width: 500px) {
   .nav-container {
     padding-bottom: 2%;
+    position: static;
   }
 }
 .nav-container h1 {
@@ -215,6 +219,14 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  padding-top: 105px;
+}
+@media (max-width: 500px) {
+  .home {
+    padding-top: 0;
+  }
 }
 .home .intro img {
   border-radius: 5px;
