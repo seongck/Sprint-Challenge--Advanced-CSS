@@ -1,1 +1,39 @@
 // Navigation code here
+.nav-container {
+  width: 100%;
+  .flex(column);
+  background-color: @nav-bg;
+  border-bottom: 1px solid @nav-border;
+  padding: 1%;
+  position: fixed;
+  opacity: 0.9;
+  z-index: 9999;
+
+  @media @phone {
+    padding-bottom: 2%;
+    position: static;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+
+    @media @phone {
+      margin-top: 10px;
+    }
+  }
+
+  nav {
+    .flex(row, space-between, center);
+    width: 40%;
+    max-width: 380px;
+
+    @media @phone {
+      width: 90%;
+    }
+
+    a {
+      color: @nav-font;
+    }
+  }
+}
+
